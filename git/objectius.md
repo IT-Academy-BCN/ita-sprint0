@@ -21,3 +21,20 @@ L'estudiant és capaç de garantir la traçabilitat, col·laboració i correcta 
 - Sincronitzar els canvis remots amb l'entorn local.
 
 
+## [FULLSTACK-PHP]
+- **Competència**:
+
+L'estudiant és capaç de versionar i compartir el desenvolupament d'un programa mitjançant l'ús de Git com a tecnologia local i GitHub com a portal de compartició de repositoris. A més, aplicarà bones pràctiques de versionat.
+
+**Objectius Específics**:
+- Diferenciar Git de GitHub.
+- Instal·lar i configurar el nom, l'email i l'editor predeterminat.
+- Crear un repositori local.
+- Identificar el que és un canvi a Git.
+- Fer _commits_ amb missatges descriptius (_conventional commits_).
+- Diferenciar entre canvi fet, canvi afegit(a l'àrea d'*staging*) i canvi versionat.
+- Connectar un repositori local amb GitHub.
+- Clonar un repositori remot.
+- Sincronitzar canvis entre l'entorn local i el remot.
+- Sincronitzar els canvis remots amb l'entorn local.
+- Utilitzar les comandes "*git log*" i "*git status*" per ubicar-se en les versions d'una projecte amb Git.

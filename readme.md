@@ -15,5 +15,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - [Sprint0 Refactoring] 
   Added Git folder with "objectius.md"
  
-
-### Fixed
+## [0.0.1] - 07-05-25
+### Changed
+- Feat: Fusió d'objectius front i back
+### Added
+- [Sprint0 Refactoring] 
+  Added "questionari.md" to git folder

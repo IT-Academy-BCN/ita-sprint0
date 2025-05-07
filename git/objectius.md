@@ -1,40 +1,53 @@
-## [FRONT-END]
-- **Competència**:
+- ****Competència**:**
 
-L'estudiant és capaç de garantir la traçabilitat, col·laboració i correcta integració de canvis del codi en projectes de desenvolupament, mitjançant l'ús de Git com a tecnologia local i GitHub com a tecnologia remota. A més, aplicarà bones pràctiques de versionat i flux de treball basat en integració contínua.
+L'estudiant és capaç de garantir la traçabilitat, col·laboració i correcta integració de canvis del codi en projectes de desenvolupament, mitjançant l'ús de Git com a tecnologia local i GitHub com a tecnologia remota. A més, aplicarà bones pràctiques de versionat.
 
-**Objectius Específics**:
-- Diferenciar Git de GitHub.
-- Instal·lar i configurar el nom, l'email i l'editor predeterminat.
-- Crear un repositori local.
-- Fer _commits_ amb missatges descriptius (_conventional commits_).
-- Connectar un repositori local amb GitHub.
-- Clonar un repositori remot.
-- Sincronitzar canvis entre l'entorn local i el remot.
-- Crear branques, canviar entre branques i eliminar branques.
-- Fer una fusió simple/bàsica entre branques.
-- Identificar i resoldre conflictes de fusió entre branques.
-- Clonar repositoris.
-- Fer una bifurcació (fork) d'un repositori.
-- Fer una sol·licitud d'incorporació (_pull-request_) per pujar canvis a una branca.
-- Revisar els canvis d'una sol·licitud d'incorporació i aprovar-los.
-- Sincronitzar els canvis remots amb l'entorn local.
+Objectius d'Aprenentatge de Git Revisats (Ordenats per Complexitat Creixent):
 
+- **Diferenciar Git de GitHub**
+Entendre les diferències fonamentals entre Git (sistema de control de versions) i GitHub (plataforma de col·laboració).
 
-## [FULLSTACK-PHP]
-- **Competència**:
+- **Instal·lar i configurar Git**
+Configurar nom d'usuari, correu electrònic i editor per defecte a l'entorn local.
 
-L'estudiant és capaç de versionar i compartir el desenvolupament d'un programa mitjançant l'ús de Git com a tecnologia local i GitHub com a portal de compartició de repositoris. A més, aplicarà bones pràctiques de versionat.
+- **Crear i gestionar repositoris locals**
+Inicialitzar un repositori local amb git init i entendre l'estructura bàsica.
 
-**Objectius Específics**:
-- Diferenciar Git de GitHub.
-- Instal·lar i configurar el nom, l'email i l'editor predeterminat.
-- Crear un repositori local.
-- Identificar el que és un canvi a Git.
-- Fer _commits_ amb missatges descriptius (_conventional commits_).
-- Diferenciar entre canvi fet, canvi afegit(a l'àrea d'*staging*) i canvi versionat.
-- Connectar un repositori local amb GitHub.
-- Clonar un repositori remot.
-- Sincronitzar canvis entre l'entorn local i el remot.
-- Sincronitzar els canvis remots amb l'entorn local.
-- Utilitzar les comandes "*git log*" i "*git status*" per ubicar-se en les versions d'una projecte amb Git.
+- **Identificar els estats dels canvis a Git**
+Distingir entre canvis modificats (working directory), preparats (staging area) i versionats (commits).
+
+- **Utilitzar comandes bàsiques d'inspecció**
+Emprar git status per verificar l'estat actual i git log per revisar l'historial de commits.
+
+- **Fer commits efectius**
+Crear commits amb missatges descriptius seguint l'estàndard Conventional Commits (ex: feat:, fix:).
+
+- **Vincular repositoris locals i remots**
+Configurar una connexió entre un repositori local i un remot a GitHub amb git remote add.
+
+- **Clonar repositoris remots**
+Duplicar un repositori remot en local amb git clone.
+
+- **Sincronitzar canvis locals amb el remot**
+Pujar canvis al repositori remot amb git push.
+
+- **Sincronitzar canvis remots en local**
+Actualitzar el repositori local amb canvis del remot mitjançant git pull o git fetch.
+
+- **Treballar amb branques**
+Crear branques (git branch), canviar entre elles (git checkout/git switch), i eliminar-les.
+
+- **Realitzar fusions bàsiques (merge)**
+Integrar canvis d'una branca a una altra amb git merge sense conflictes.
+
+- **Gestionar conflictes de fusió**
+Identificar conflictes en fusions i resoldre'ls manualment amb eines com git diff o editors de codi.
+
+- **Bifurcar (fork) repositoris a GitHub**
+Crear una còpia personal d'un repositori extern a GitHub per contribuir-hi.
+
+- **Crear i gestionar pull requests**
+Proposar canvis a repositoris externs mitjançant sol·licituds d'incorporació (pull requests) a GitHub.
+
+- **Revisar i aprovar pull requests**
+Analitzar canvis, deixar comentaris i integrar sol·licituds d'incorporació en projectes col·laboratius.

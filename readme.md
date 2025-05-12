@@ -21,3 +21,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - [Sprint0 Refactoring] 
   Added "questionari.md" to git folder
+
+## [0.0.1] - 12-05-25
+### Added
+- [Sprint0 Refactoring] 
+  Added "possible-material-docent.md" to git folder
+  Added "entregable.md" to git folder

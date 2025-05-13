@@ -95,14 +95,15 @@ git commit -m "fix: resolve login timeout error"
 
 
      🧠 Prova el teu codi sense seguir el camí feliç (*happy path*)
-
 ---
+
 🖇️ **Control de la Complexitat**  
 
 ✅ Reduir condicionals i bucles imbricats innecessaris.  
 ✅ Evitar l'ús de variables temporals o `flags` que compliquin el flux.  
 ✅ Comprovar que totes les opcions dins de les condicions són realistes.  
 ✅ No utilitzar valors màgics
+
 ---
 
 🦾 **Robustesa i Gestió d'Errors**  

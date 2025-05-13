@@ -17,7 +17,6 @@ Aquest manual unifica els criteris essencials per fer lliuraments professionals 
 
 ### 1.1 Estructura Bàsica
 
-
 ```plaintext
 projecte/
 ├── src/                  # Codi font
@@ -59,6 +58,7 @@ git commit -m "fix: resolve login timeout error"
 - ✔ Java/Python: Seguir convencions del llenguatge (`snake_case` en Python, `camelCase` en Java).
 
 ### 2.3 Funciones y Métodos
+
 - ✔ Cuida la quantitat de línies per funció (si és més llarg, dividir).
 - ✔ Utilitzar *early returns* para simplificar lógica:
     ```java
@@ -69,6 +69,7 @@ git commit -m "fix: resolve login timeout error"
     ```
 
 ### 2.4 Gestió d'Errors
+
 - **Front-end:** Mostrar feedback clar a l’usuari (ex. missatges toast)..
 - **Back-end:** Utilitzar middlewares d'error i codis HTTP adequats:
     ```java
@@ -81,6 +82,7 @@ git commit -m "fix: resolve login timeout error"
 ## 📄 3. Documentació
 
 ### 3.1 README.md (Obligatori)
+
 Ha d'incloure:
 ```html
 # Nom del Projecte  
@@ -100,6 +102,7 @@ Ha d'incloure:
 ```
 
 ### 3.2 Comentarios en Código
+
 Intenta evitar-los, recorda que un codi net s'autodescriu. Si els utilitzaràs, tingues en compte explicar el per què, no el què:
 ```java 
 // ❌ Malament: "Suma a + b"
@@ -108,9 +111,11 @@ function calculateTotal(a, b) { ... }
  ```
 
 ## 🧪 4. Testing (Opcional pero Recomendado)
+
 - Cobertura mínima: 70% per a projectes avançats
 
 ## 🔍 5. Code Review por Pares
+
 Sempre demana una segona opinió. El codi sempre ha d'estar en un cicle de millora continua. veure instruccions a l'arxiu `code_review_p2p`
 
 ### 5.1 Checklist de Revisión
@@ -123,6 +128,7 @@ Sempre demana una segona opinió. El codi sempre ha d'estar en un cicle de millo
 
 
 ## 🚀 6. Entrega Final
+
 Antes de entregar:
 - Ejecuta tests locales
 - Prueba en otro dispositivo (evita el “en mi PC funciona”)
@@ -130,6 +136,7 @@ Antes de entregar:
 
 
 ## ✨ Bonus: Consejos Pro
+
 - Front-end: Usar herramientas como ESLint/Prettier para consistencia
 - Back-end: Implementar logging básico (winston, morgan)
 - DevOps Básico: Configurar GitHub Actions para tests automáticos i Deployments.

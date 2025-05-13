@@ -7,9 +7,9 @@
 
 Aquest manual unifica els criteris essencials per fer lliuraments professionals de projectes, combinant:
 
-✅ Bones pràctiques tècniques (codi net, estructura, testing)  
-✅ Gestió professional (Git, documentació, CI/CD bàsic)  
-✅ Estàndards de qualitat (revisió per parells, principis SOLID/KISS/DRY)
+✅ Bones pràctiques tècniques (codi net, estructura)  
+✅ Gestió professional (Git, documentació)  
+✅ Estàndards de qualitat (principis SOLID/KISS/DRY)
 
 ---
 
@@ -26,7 +26,10 @@ projecte/
 └── README.md             # Documentació principal
 ```
 
-
+    🧠 Mantingues una organització clara en carpetes i fitxers
+    
+    🧠 Fes servir noms en minúscules i sense espais
+---
 ### 1.2 Normes GitHub
 
 - **Noms dels repositoris**: Descriptius i en anglès (ex. `task-manager`, no `projecte1`).
@@ -36,94 +39,91 @@ projecte/
 git commit -m "feat: add user authentication"
 git commit -m "fix: resolve login timeout error"
 ```
-- Branques: Fer servir Gitflow (`main`, `develop`, `feature/xxx`).
+      🧠 Branques: Fer servir Gitflow (main, develop, feature/xxx).
 
 ## 💻 2. Qualitat del Codi
 
 ### 2.1 Principis Fonamentals
 
-| Principi | Descripció                                  | Exemple                             |
-| -------- | ------------------------------------------- | ----------------------------------- |
-| KISS     | Mantingues el codi senzill i llegible       | Evita sobre-enginyeria en funcions  |
-| DRY      | No repeteixis codi. Fes servir mòduls       | Extreure lògica repetida a `utils/` |
-| SOLID    | (Back-end) Disseny OOP amb bones pràctiques | `Responsabilitat única` en classes  |
+| Principi | Descripció                                  |
+|----------|---------------------------------------------|
+| KISS     | Mantingues el codi senzill i llegible       |
+| DRY      | No repeteixis codi. Fes servir mòduls       |
+| SOLID    | (Back-end) Disseny OOP amb bones pràctiques |
 
+     🧠 Utilitza patrons com _early return_ o _fail fast_ quan sigui necessari
+
+---
 
 ### 2.2 Estil i Convencions
 
-**Front-end:**
-- ✔ JS/TS: `camelCase` per a variables i funcions, `PascalCase` per a components.
-- ✔ CSS: Utilitzar metodologies com `BEM`.
+**General**  
 
-**Back-end:**
-- ✔ Java/Python: Seguir convencions del llenguatge (`snake_case` en Python, `camelCase` en Java).
+✅ Tenir el codi ben formatat, respectant correctament els espais, els salts de línia i la indentació per garantir-ne la llegibilitat.  
+✅ Escriure comentaris breus i clars només quan siguin necessaris. 
 
-**General**
-- Mantenir una indentació coherent segons els estàndards del llenguatge.
-- Utilitzar correctament espais i salts de línia en estructures de control.
-- Escriure comentaris breus i clars només quan siguin necessaris.
-- Mantenir una organització consistent a tots els fitxers del projecte.
+     🧠 El codi ha de ser **comprensible a primera vista**
+     🧠 Programa en anglès.
+---
+
+💬 **Nomenclatura**  
+
+✅ Seguir les convencions de nomenclatura.  
+✅ Fer servir noms descriptius per a classes, mètodes i variables.  
+✅ Els noms dels mètodes sempre s'escriuen amb verbs infinitius.  
+✅ Evitar abreviatures poc clares o noms genèrics. 
+
+     🧠 El nom del mètode o funció ha de deixar clar quin és el seu propòsit
+---
+
+🩹 **Mètodes Curts amb Única Responsabilitat**
+
+✅ Verificar que els mètodes i classes siguin concisos i no facin massa coses.  
+✅ Aplicar el principi de responsabilitat única per millorar llegibilitat i manteniment.  
+✅ Considerar dividir mètodes complexos en altres més específics quan calgui.  
+
+
+     🧠 Evita el codi espagueti.  
+---
 
 ### 2.3 Criteris Tècnics
-1. **compliment de requirements**
-- Verificar que la solució compleix tots els requisits especificats.
-- Assegurar que les funcionalitats obligatòries estan implementades correctament.
 
-2. **Qualitat del Codi**
+📜 **Compliment de requirements** 
 
-    **Nomenclatura**
-    - Seguir les convencions de nomenclatura establertes en el projecte.
-    - Fer servir noms descriptius per a classes, mètodes i variables. Utilitzar noms que indiquin la funció o responsabilitat de cada element.
-    - Els noms dels mètodes sempre s'escriuen amb verbs infinitius
-    - Evitar abreviatures poc clares o noms genèrics.
-
-    **Mètodes Curts amb Única Responsabilitat**
-    - Verificar que els mètodes i classes siguin concisos i no facin massa coses.
-    - Aplicar el principi de responsabilitat única per millorar llegibilitat i manteniment.
-    - Considerar dividir mètodes complexos en altres més específics quan calgui.
-
-    **Control de la Complexitat**
-    - Reduir condicionals i bucles imbricats innecessaris.
-    - Comprovar que totes les opcions dins de les condicions són realistes i que no existeixen condicions inaccessibles o redundants
-    - Utilitzar estratègies com `early returns` o `fail fast` per simplificar la lògica.
-    - Evitar l'ús excessiu de variables temporals o `flags` que compliquin el flux.
-    - No utilitzar variables globals (excepte si realment és necessari)
-    - Declarar les variables en el context del seu ús per evitar confusions i reduir l’abast innecessari
-    - No utilitzar valors màgics
-    - Assegurar-se que la condició del bucle es complirà en algun moment, evitant bucles que mai s’aturen
-    - 
-
-    **Estructures de Dades**
-    - Escollir les col·leccions adequades per a cada tipus de dada.
-    - Evitar iteracions o modificacions ineficients de llistes i conjunts.
-    - Considerar construccions del llenguatge que puguin simplificar la lògica.
-
-3. **Robustesa i Gestió d'Errors**
-- Garantir que les excepcions es gestionen correctament.
-- Evitar captures massa genèriques, prioritzant la gestió específica d'errors.
-- Minimitzar l’ús de valors nuls, utilitzant alternatives que millorin el control.
-- Assegurar que no hi ha errors que quedin sense tractament o notificació.
+✅ Verificar que la solució compleix tots els requisits especificats.  
+✅ Cal assegurar que les funcionalitats obligatòries estan implementades correctament.
 
 
-### 2.3 Funciones y Métodos
-- ✔ Cuida la quantitat de línies per funció (si és més llarg, dividir).
-- ✔ Utilitzar *early returns* para simplificar lógica:
-    ```java
-    function getUser(id) {
-    if (!id) return null;  // Early return
-    // Lògica principal...
-    }
-    ```
+     🧠 Prova el teu codi sense seguir el camí feliç (*happy path*)
 
-### 2.4 Gestió d'Errors
-- **Front-end:** Mostrar feedback clar a l’usuari (ex. missatges toast)..
-- **Back-end:** Utilitzar middlewares d'error i codis HTTP adequats:
-    ```java
-    // Exemple amb Express
-    app.use((err, req, res, next) => {
-    res.status(500).json({ error: "something went wrong" });
-    });
-    ```
+---
+🖇️ **Control de la Complexitat**  
+
+✅ Reduir condicionals i bucles imbricats innecessaris.  
+✅ Evitar l'ús de variables temporals o `flags` que compliquin el flux.  
+✅ Comprovar que totes les opcions dins de les condicions són realistes.  
+✅ No utilitzar valors màgics
+---
+
+🦾 **Robustesa i Gestió d'Errors**  
+
+✅ Gestiona de forma explícita les excepcions previsibles.  
+✅ Evita capturar errors de manera genèrica.
+
+
+     🧠 Registra els errors de manera que ajudin al diagnòstic però sense exposar informació sensible
+     🧠 Mostra missatges d’error clars i útils per a l’usuari, sense detalls interns del sistema
+---
+🔒 **Codi segur**  
+
+✅ No confiïs mai en l’input de l’usuari: valida les dades.  
+✅ Evita biblioteques no mantingudes o amb pocs usuaris.  
+✅ No mostris missatges d’error detallats a l’usuari final.  
+✅ El codi només han de tenir accés als recursos estrictament necessaris.  
+
+
+     🧠  Els errors interns han d’anar a logs segurs.  
+___
 
 ## 📄 3. Documentació
 
@@ -135,7 +135,7 @@ Ha d'incloure:
 
 ## 🛠 Tecnologies  
 - Frontend: React, Tailwind  
-- Backend: Node.js, MongoDB  
+- Backend: Java, MongoDB  
 
 ## 🚀 Instal·lació  
 1. Clonar el repositori: `git clone ...`  
@@ -145,40 +145,4 @@ Ha d'incloure:
 ## 📸 Demo  
 [Enllaç a Vercel/Netlify] o captures de pantalla.
 ```
-
-### 3.2 Comentarios en Código
-Intenta evitar-los, recorda que un codi net s'autodescriu. Si els utilitzaràs, tingues en compte explicar el per què, no el què:
-```java 
-// ❌ Malament: "Suma a + b"
-// ✅ Bé: "Necessari per calcular el total amb impostos (Llei XYZ)"
-function calculateTotal(a, b) { ... }
- ```
-
-## 🧪 4. Testing (Opcional pero Recomendado)
-- Cobertura mínima: 70% per a projectes avançats
-
-## 🔍 5. Code Review por Pares
-Sempre demana una segona opinió. El codi sempre ha d'estar en un cicle de millora continua. veure instruccions a l'arxiu `code_review_p2p`
-
-### 5.1 Checklist de Revisión
-
-| Àrea          | Preguntes Clau                                         |
-| ------------- | ------------------------------------------------------ |
-| Funcionalitat | Compleix tots els requisits de l’enunciat?             |
-| Codi Neteja   | Segueix els principis DRY/KISS? Té noms descriptius?   |
-| Seguretat     | Hi ha dades sensibles exposades? Validació d’entrades? |
-
-
-## 🚀 6. Entrega Final
-Antes de entregar:
-- Ejecuta tests locales
-- Prueba en otro dispositivo (evita el “en mi PC funciona”)
-- Actualiza el README.md con instrucciones claras
-
-
-## ✨ Bonus: Consejos Pro
-- Front-end: Usar herramientas como ESLint/Prettier para consistencia
-- Back-end: Implementar logging básico (winston, morgan)
-- DevOps Básico: Configurar GitHub Actions para tests automáticos i Deployments.
-
 

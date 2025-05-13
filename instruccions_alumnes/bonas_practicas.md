@@ -27,7 +27,7 @@ projecte/
 ```
 
 
-### 1.2 Normes GitHub
+### 1.2 Normes Git
 
 - **Noms dels repositoris**: Descriptius i en anglès (ex. `task-manager`, no `projecte1`).
 - **Commits**: Atòmics i amb missatges clars, seguint la convenció *Conventional Commits*:

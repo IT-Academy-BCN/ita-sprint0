@@ -1,15 +1,16 @@
 # Guia per al Code Review i el Feedback entre Estudiants
 
-## Introducció
+## 📌 Introducció
 
 Aquesta guia té com a objectiu proporcionar un procés estructurat i efectiu per fer Code Review i donar Feedback entre companys/es de classe (parelles).
 
 **Per què és important?**
-- Aprenentatge actiu: Descobreixes noves solucions i bones pràctiques.
-- Qualitat del codi: Detectes errors abans i millores la mantenibilitat.
-- Habilitat professional: El Code Review és essencial en entorns laborals. 
 
-## Com Realitzar un Code Review?
+✅ Aprenentatge actiu: Descobreixes noves solucions i bones pràctiques.  
+✅ Qualitat del codi: Detectes errors abans i millores la mantenibilitat.  
+✅ Habilitat professional: El Code Review és essencial en entorns laborals. 
+
+## 🔍 Com Realitzar un Code Review?
 
 ### 1. Preparació
 
@@ -29,7 +30,7 @@ Aquesta guia té com a objectiu proporcionar un procés estructurat i efectiu pe
 - L’**autora** explica: l’objectiu de la solució, les decisions tècniques preses, els punts clau a considerar.
 - La **revisora**: llegeix el codi amb deteniment, identifica possibles millores, planteja dubtes i propostes de canvi, i documenta els seus resultats a la issue utilitzant el **format de documentació d’un Code Review** detallat més avall.
 
-## Criteris Tècnics a Observar en un Code Review
+## 💻 Criteris Tècnics a Observar en un Code Review
 1. **Compliment de l’Enunciat**
 - Verificar que la solució compleix tots els requisits especificats.
 - Assegurar que les funcionalitats obligatòries estan implementades correctament.
@@ -85,7 +86,7 @@ Aquesta guia té com a objectiu proporcionar un procés estructurat i efectiu pe
     - Instruccions clares per a la configuració i execució.
     - Captures de pantalla o demos quan sigui rellevant.
 
-## Com Donar Feedback Efectiu?
+## 📄 Com Donar Feedback Efectiu?
 Un bon Code Review no només assenyala errors, sinó que inspira millores i celebra els encerts.  
 Preparades per convertir-vos en expertes en Code Review? A practicar! 💻🔍
 

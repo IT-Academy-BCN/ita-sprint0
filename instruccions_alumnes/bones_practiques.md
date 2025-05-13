@@ -17,6 +17,7 @@ Aquest manual unifica els criteris essencials per fer lliuraments professionals 
 
 ### 1.1 Estructura Bàsica
 
+
 ```plaintext
 projecte/
 ├── src/                  # Codi font
@@ -26,7 +27,7 @@ projecte/
 ```
 
 
-### 1.2 Normes Git
+### 1.2 Normes GitHub
 
 - **Noms dels repositoris**: Descriptius i en anglès (ex. `task-manager`, no `projecte1`).
 - **Commits**: Atòmics i amb missatges clars, seguint la convenció *Conventional Commits*:
@@ -57,8 +58,54 @@ git commit -m "fix: resolve login timeout error"
 **Back-end:**
 - ✔ Java/Python: Seguir convencions del llenguatge (`snake_case` en Python, `camelCase` en Java).
 
-### 2.3 Funciones y Métodos
+**General**
+- Mantenir una indentació coherent segons els estàndards del llenguatge.
+- Utilitzar correctament espais i salts de línia en estructures de control.
+- Escriure comentaris breus i clars només quan siguin necessaris.
+- Mantenir una organització consistent a tots els fitxers del projecte.
 
+### 2.3 Criteris Tècnics
+1. **compliment de requirements**
+- Verificar que la solució compleix tots els requisits especificats.
+- Assegurar que les funcionalitats obligatòries estan implementades correctament.
+
+2. **Qualitat del Codi**
+
+    **Nomenclatura**
+    - Seguir les convencions de nomenclatura establertes en el projecte.
+    - Fer servir noms descriptius per a classes, mètodes i variables. Utilitzar noms que indiquin la funció o responsabilitat de cada element.
+    - Els noms dels mètodes sempre s'escriuen amb verbs infinitius
+    - Evitar abreviatures poc clares o noms genèrics.
+
+    **Mètodes Curts amb Única Responsabilitat**
+    - Verificar que els mètodes i classes siguin concisos i no facin massa coses.
+    - Aplicar el principi de responsabilitat única per millorar llegibilitat i manteniment.
+    - Considerar dividir mètodes complexos en altres més específics quan calgui.
+
+    **Control de la Complexitat**
+    - Reduir condicionals i bucles imbricats innecessaris.
+    - Comprovar que totes les opcions dins de les condicions són realistes i que no existeixen condicions inaccessibles o redundants
+    - Utilitzar estratègies com `early returns` o `fail fast` per simplificar la lògica.
+    - Evitar l'ús excessiu de variables temporals o `flags` que compliquin el flux.
+    - No utilitzar variables globals (excepte si realment és necessari)
+    - Declarar les variables en el context del seu ús per evitar confusions i reduir l’abast innecessari
+    - No utilitzar valors màgics
+    - Assegurar-se que la condició del bucle es complirà en algun moment, evitant bucles que mai s’aturen
+    - 
+
+    **Estructures de Dades**
+    - Escollir les col·leccions adequades per a cada tipus de dada.
+    - Evitar iteracions o modificacions ineficients de llistes i conjunts.
+    - Considerar construccions del llenguatge que puguin simplificar la lògica.
+
+3. **Robustesa i Gestió d'Errors**
+- Garantir que les excepcions es gestionen correctament.
+- Evitar captures massa genèriques, prioritzant la gestió específica d'errors.
+- Minimitzar l’ús de valors nuls, utilitzant alternatives que millorin el control.
+- Assegurar que no hi ha errors que quedin sense tractament o notificació.
+
+
+### 2.3 Funciones y Métodos
 - ✔ Cuida la quantitat de línies per funció (si és més llarg, dividir).
 - ✔ Utilitzar *early returns* para simplificar lógica:
     ```java
@@ -69,7 +116,6 @@ git commit -m "fix: resolve login timeout error"
     ```
 
 ### 2.4 Gestió d'Errors
-
 - **Front-end:** Mostrar feedback clar a l’usuari (ex. missatges toast)..
 - **Back-end:** Utilitzar middlewares d'error i codis HTTP adequats:
     ```java
@@ -82,7 +128,6 @@ git commit -m "fix: resolve login timeout error"
 ## 📄 3. Documentació
 
 ### 3.1 README.md (Obligatori)
-
 Ha d'incloure:
 ```html
 # Nom del Projecte  
@@ -102,7 +147,6 @@ Ha d'incloure:
 ```
 
 ### 3.2 Comentarios en Código
-
 Intenta evitar-los, recorda que un codi net s'autodescriu. Si els utilitzaràs, tingues en compte explicar el per què, no el què:
 ```java 
 // ❌ Malament: "Suma a + b"
@@ -111,11 +155,9 @@ function calculateTotal(a, b) { ... }
  ```
 
 ## 🧪 4. Testing (Opcional pero Recomendado)
-
 - Cobertura mínima: 70% per a projectes avançats
 
 ## 🔍 5. Code Review por Pares
-
 Sempre demana una segona opinió. El codi sempre ha d'estar en un cicle de millora continua. veure instruccions a l'arxiu `code_review_p2p`
 
 ### 5.1 Checklist de Revisión
@@ -128,7 +170,6 @@ Sempre demana una segona opinió. El codi sempre ha d'estar en un cicle de millo
 
 
 ## 🚀 6. Entrega Final
-
 Antes de entregar:
 - Ejecuta tests locales
 - Prueba en otro dispositivo (evita el “en mi PC funciona”)
@@ -136,8 +177,8 @@ Antes de entregar:
 
 
 ## ✨ Bonus: Consejos Pro
-
 - Front-end: Usar herramientas como ESLint/Prettier para consistencia
 - Back-end: Implementar logging básico (winston, morgan)
 - DevOps Básico: Configurar GitHub Actions para tests automáticos i Deployments.
+
 

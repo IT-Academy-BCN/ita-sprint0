@@ -12,7 +12,7 @@ GitHub és la plataforma utilitzada per emmagatzemar i compartir els projectes d
 
 ### Git
 
-- [Què és un sistema de versions](https://inlocrobotics.com/es/sistema-de-control-de-versiones/)
+- [Què és un sistema de versions](https://www.arsys.es/blog/control-versiones-git)
 - [Què és GIT?](https://www.atlassian.com/es/git/tutorials/what-is-git)
 - [Git, la guia simple](https://rogerdudler.github.io/git-guide/)
 - ["Oh my GIT!" Un videojoc per aprendre GIT](https://ohmygit.org/)
